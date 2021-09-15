@@ -1,0 +1,6 @@
+[
+  { "title": "Accueil", "link": "/" },
+  { "title": "Cours Audio", "link": "/cours" },
+  { "title": "Conférences", "link": "/conférences" },
+  { "title": "Prêches", "link": "/prêches" }
+]
