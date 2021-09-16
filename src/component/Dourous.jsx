@@ -8,7 +8,7 @@ import preches from '../data/prêches.json';
 
 const Dourous = () => {
   return (
-    <div>
+    <div style={{ margin: 'auto', width: '90%' }}>
       <div
         style={{
           display: 'flex',
@@ -126,7 +126,7 @@ const Dourous = () => {
             alignItems: 'center',
           }}
         >
-          <img src={audio} alt="h" width="20px" style={{ marginLeft: 35 }} />
+          <img src={audio} alt="h" width="15px" style={{ marginLeft: 35 }} />
           <span style={{ marginLeft: 18 }}> Conférences</span>
         </div>
         <div style={{ fontSize: 23, color: '#ababab', fontWeight: 'bold' }}>
