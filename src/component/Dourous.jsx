@@ -5,19 +5,16 @@ import preche from '../assets/think-peaks-brands.svg';
 import dourous from '../data/dourous.json';
 import conferences from '../data/conferences.json';
 import preches from '../data/prêches.json';
+import './Slide.css';
 
 const Dourous = () => {
+  const conférence = conferences.slice(0, 5);
+  const prêche = preches.slice(0, 5);
+  const cours = dourous.slice(0, 5);
+
   return (
-    <div style={{ margin: 'auto', width: '90%' }}>
-      <div
-        style={{
-          display: 'flex',
-          margin: 'auto',
-          width: '50%',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      >
+    <div className="container">
+      <div className="titleChoise">
         <div
           style={{
             maxHeight: 300,
@@ -40,28 +37,13 @@ const Dourous = () => {
           />
           <span style={{ marginLeft: 18 }}> Cours Audio</span>
         </div>
-        <div style={{ fontSize: 23, color: '#ababab', fontWeight: 'bold' }}>
+        <div style={{ fontSize: 19, color: '#ababab', fontWeight: 'bold' }}>
           Nouveautés
         </div>
       </div>
-
-      <div
-        style={{
-          backgroundColor: '#fff',
-          border: '3px solid  #c25542',
-          borderRadius: 6,
-          color: '#ababab',
-          fontSize: 16,
-          fontWeight: 600,
-          padding: 12,
-          margin: 'auto',
-          width: '50%',
-          overflow: 'auto',
-          maxHeight: 300,
-        }}
-      >
+      <div className="courtChoise">
         <div>
-          {dourous.map((item, index) => {
+          {cours.map((item, index) => {
             return (
               <div
                 style={{
@@ -77,7 +59,7 @@ const Dourous = () => {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <h4
+                  <h6
                     style={{
                       backgroundColor: '#ababab',
                       border: '3px solid  #fff',
@@ -87,7 +69,7 @@ const Dourous = () => {
                     }}
                   >
                     {item.name}
-                  </h4>
+                  </h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
                 <a
@@ -102,16 +84,7 @@ const Dourous = () => {
         </div>
       </div>
       {/* conferences */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          margin: 'auto',
-          width: '50%',
-          justifyContent: 'space-between',
-          marginTop: 25,
-        }}
-      >
+      <div className="titleChoise">
         <div
           style={{
             maxHeight: 300,
@@ -129,28 +102,13 @@ const Dourous = () => {
           <img src={audio} alt="h" width="15px" style={{ marginLeft: 35 }} />
           <span style={{ marginLeft: 18 }}> Conférences</span>
         </div>
-        <div style={{ fontSize: 23, color: '#ababab', fontWeight: 'bold' }}>
+        <div style={{ fontSize: 19, color: '#ababab', fontWeight: 'bold' }}>
           Nouveautés
         </div>
       </div>
-
-      <div
-        style={{
-          backgroundColor: '#fff',
-          border: '3px solid  #65abc2',
-          borderRadius: 6,
-          color: '#ababab',
-          fontSize: 16,
-          fontWeight: 600,
-          padding: 12,
-          margin: 'auto',
-          width: '50%',
-          overflow: 'auto',
-          maxHeight: 300,
-        }}
-      >
+      <div className="courtChoise" style={{ border: '3px solid #65abc2' }}>
         <div>
-          {conferences.map((item, index) => {
+          {conférence.map((item) => {
             return (
               <div
                 style={{
@@ -166,7 +124,7 @@ const Dourous = () => {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <h4
+                  <h6
                     style={{
                       backgroundColor: '#ababab',
                       border: '3px solid  #fff',
@@ -176,7 +134,7 @@ const Dourous = () => {
                     }}
                   >
                     {item.name}
-                  </h4>
+                  </h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
                 <a
@@ -191,16 +149,7 @@ const Dourous = () => {
         </div>
       </div>
       {/* Prêches */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          margin: 'auto',
-          width: '50%',
-          justifyContent: 'space-between',
-          marginTop: 25,
-        }}
-      >
+      <div className="titleChoise">
         <div
           style={{
             maxHeight: 300,
@@ -221,7 +170,7 @@ const Dourous = () => {
         </div>
         <div
           style={{
-            fontSize: 23,
+            fontSize: 19,
             color: '#ababab',
             fontWeight: 'bold',
             marginTop: 25,
@@ -231,23 +180,9 @@ const Dourous = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: '#fff',
-          border: '3px solid  #84b856',
-          borderRadius: 6,
-          color: '#ababab',
-          fontSize: 16,
-          fontWeight: 600,
-          padding: 12,
-          margin: 'auto',
-          width: '50%',
-          overflow: 'auto',
-          maxHeight: 300,
-        }}
-      >
+      <div className="courtChoise" style={{ border: '3px solid #84b856' }}>
         <div>
-          {preches.map((item, index) => {
+          {prêche.map((item, index) => {
             return (
               <div
                 style={{
@@ -263,7 +198,7 @@ const Dourous = () => {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <h4
+                  <h6
                     style={{
                       backgroundColor: '#ababab',
                       border: '3px solid  #fff',
@@ -273,7 +208,7 @@ const Dourous = () => {
                     }}
                   >
                     {item.name}
-                  </h4>
+                  </h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
                 <a
