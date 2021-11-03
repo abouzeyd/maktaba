@@ -1,6 +1,7 @@
 import React from 'react';
 import navigations from '../data/navigation.json';
 import { Navbar, Container, Nav as Navigation } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -20,8 +21,8 @@ const Nav = () => {
                         marginLeft: 35,
                       }}
                     >
-                      <a
-                        href={item.link}
+                      <Link
+                        to={item.link}
                         style={{
                           textDecoration: 'none',
                           color: 'white',
@@ -29,7 +30,7 @@ const Nav = () => {
                         }}
                       >
                         {item.title}
-                      </a>
+                      </Link>
                     </li>
                   </div>
                 );
