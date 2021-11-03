@@ -1,7 +1,7 @@
 import React from 'react';
 import conferences from '../data/conferences.json';
 import audio from '../assets/microphone-solid.svg';
-import Nav from '../component/Navigation';
+import Nav from '../component/Nav';
 import Footer from '../component/Footer';
 
 const Conferences = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import navigations from '../data/navigation.json';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav as Navigation } from 'react-bootstrap';
 
-const navigation = () => {
+const Nav = () => {
   return (
     <div style={{ backgroundColor: 'rgb(132, 184, 86)' }}>
       <Navbar expand="lg">
@@ -10,7 +10,7 @@ const navigation = () => {
           <Navbar.Brand href="/">MAKTABA</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Navigation className="me-auto">
               {navigations.map((item, index) => {
                 return (
                   <div key={index}>
@@ -34,7 +34,7 @@ const navigation = () => {
                   </div>
                 );
               })}
-            </Nav>
+            </Navigation>
           </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -42,4 +42,12 @@ const navigation = () => {
   );
 };
 
-export default navigation;
+export default Nav;
+
+// const Navigation = () => {
+//   return (
+
+//   );
+// };
+
+// export default Navigation;

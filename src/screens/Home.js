@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../component/Navigation';
+import Nav from '../component/Nav';
 import Header from '../component/Header';
 import Dourous from '../component/Dourous';
 import Footer from '../component/Footer';

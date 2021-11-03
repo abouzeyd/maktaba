@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../component/Footer';
-import Nav from '../component/Navigation';
+import Nav from '../component/Nav';
 import dourous from '../data/dourous.json';
 import conference from '../assets/headphones-solid.svg';
 

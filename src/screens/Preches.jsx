@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../component/Navigation';
+import Nav from '../component/Nav';
 import Footer from '../component/Footer';
 import preches from '../data/prêches.json';
 import preche from '../assets/think-peaks-brands.svg';
