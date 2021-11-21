@@ -1,6 +1,7 @@
 import '../user/User.css';
 import Topbar from '../../component/topbar/Topbar';
 import Sidebar from '../../component/sidebar/sidebar';
+import { Link } from 'react-router-dom';
 
 const User = () => {
   return (
@@ -17,9 +18,9 @@ const User = () => {
             </div>
           </div>
           <div className="user__div">
-            <a href="/createUser" className="user__button">
+            <Link to="/createUser" className="user__button">
               <span className="user__add">+</span> Creer un utilisateur
-            </a>
+            </Link>
           </div>
         </div>
       </div>

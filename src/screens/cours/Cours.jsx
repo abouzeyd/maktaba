@@ -3,6 +3,7 @@ import Footer from '../../component/Footer';
 import Nav from '../../component/Nav';
 import dourous from '../../data/dourous.json';
 import conference from '../../assets/headphones-solid.svg';
+import { Link } from 'react-router-dom';
 
 const Cours = () => {
   const audio = new Audio();
@@ -35,9 +36,9 @@ const Cours = () => {
                     <h6 className="court__title">{item.name}</h6>
                     <span style={{ fontSize: 14 }}>{item.date}</span>
                   </div>
-                  <a href="/" className="court__link">
+                  <Link to="/" className="court__link">
                     {item.title}
-                  </a>
+                  </Link>
                 </div>
               );
             })}

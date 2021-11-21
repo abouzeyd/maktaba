@@ -3,6 +3,7 @@ import Nav from '../../component/Nav';
 import Footer from '../../component/Footer';
 import preches from '../../data/prêches.json';
 import preche from '../../assets/think-peaks-brands.svg';
+import { Link } from 'react-router-dom';
 
 const Preches = () => {
   return (
@@ -35,9 +36,9 @@ const Preches = () => {
                   <h6 className="speak__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <a href="/" className="speak__link">
+                <Link to="/" className="speak__link">
                   {item.title}
-                </a>
+                </Link>
               </div>
             );
           })}

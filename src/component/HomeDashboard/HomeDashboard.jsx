@@ -4,16 +4,17 @@ import LineStyleIcon from '@mui/icons-material/LineStyle';
 import PersonIcon from '@mui/icons-material/Person';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import SettingsVoiceIcon from '@mui/icons-material/SettingsVoice';
+import { Link } from 'react-router-dom';
 
 const HomeDashboard = () => {
   return (
     <div className="home__dashboard">
       {homeDashboard.map((item, index) => {
         return (
-          <a href={item.link} className="home__item" key={index}>
+          <Link to={item.link} className="home__item" key={index}>
             <span className="home__title">{item.title}</span>
             <item.icon style={{ fontSize: 40 }} />
-          </a>
+          </Link>
         );
       })}
     </div>
