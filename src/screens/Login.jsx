@@ -1,7 +1,12 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
+  let history = useHistory();
+  const login = () => {
+    history.push('');
+  };
   return (
     <div>
       <div style={style.main} className="container">
@@ -10,7 +15,9 @@ const Login = () => {
           <div className="card " style={{ border: '0px solid black ' }}>
             <input type="text" placeholder="admin" style={style.input} />
             <input type="text" placeholder="mot de passe" style={style.input} />
-            <Button className="btn btn-primary">Connexion</Button>
+            <Button className="btn btn-primary" onClick={login}>
+              Connexion
+            </Button>
           </div>
         </Form>
       </div>

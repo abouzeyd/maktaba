@@ -17,50 +17,6 @@
     height: 40vh;
   }
 }
-.courtChoise {
-  border: 3px solid #c25542;
-  border-radius: 6px;
-  color: #ababab;
-  font-size: 16;
-  font-weight: 600;
-  padding: 12;
-  margin: auto;
-  width: 50%;
-  overflow: auto;
-  max-height: 300px;
-}
-@media screen and (max-width: 800px) {
-  .courtChoise {
-    border: 3px solid #c25542;
-    border-radius: 6px;
-    color: #ababab;
-    font-size: 14;
-    font-weight: 600;
-    padding: 12;
-    margin: auto;
-    width: 90%;
-    overflow: auto;
-    max-height: 300px;
-  }
-}
-.titleChoise {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: 50%;
-  justify-content: space-between;
-  margin-top: 25px;
-}
-@media screen and (max-width: 800px) {
-  .titleChoise {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    justify-content: space-between;
-    margin-top: 25px;
-  }
-}
 .footer {
   background-color: rgb(132, 184, 86);
   margin-top: 32px;

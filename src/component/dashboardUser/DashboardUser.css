@@ -1,0 +1,15 @@
+.dash {
+  flex: 4;
+}
+.user__list {
+  background-color: rgb(13, 214, 97);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  line-height: 30px;
+  margin-right: 17px;
+}
+.user__delete {
+  color: red;
+  cursor: pointer;
+}

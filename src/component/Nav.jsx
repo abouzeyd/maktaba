@@ -36,6 +36,11 @@ const Nav = () => {
                 );
               })}
             </Navigation>
+            <div>
+              <Link to="/Login" className="marklogin">
+                Admin
+              </Link>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
