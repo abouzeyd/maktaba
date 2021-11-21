@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 const Login = () => {
   let history = useHistory();
   const login = () => {
-    history.push('');
+    history.push('/dashboard');
   };
   return (
     <div>
