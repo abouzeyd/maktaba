@@ -69,7 +69,7 @@ const DashboardUser = () => {
       renderCell: (params) => {
         return (
           <>
-            <Link to={'/user/' + params.id}>
+            <Link to={`/user/${params.id}`}>
               <button className="user__list">Editer</button>
             </Link>
             <DeleteIcon

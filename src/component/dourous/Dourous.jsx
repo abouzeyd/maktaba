@@ -6,6 +6,7 @@ import dourous from '../../data/dourous.json';
 import conferences from '../../data/conferences.json';
 import preches from '../../data/prêches.json';
 import './Dourous.css';
+import { Link } from 'react-router-dom';
 
 const Dourous = () => {
   const conférence = conferences.slice(0, 5);
@@ -35,9 +36,12 @@ const Dourous = () => {
                   <h6 className="court__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <a href="/" className="court__link">
+                <Link
+                  to={{ pathname: `/allcourt/${item.id}` }}
+                  className="court__link"
+                >
                   {item.title}
-                </a>
+                </Link>
               </div>
             );
           })}
@@ -60,9 +64,12 @@ const Dourous = () => {
                   <h6 className="court__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <a href="/" className="court__link">
+                <Link
+                  to={{ pathname: `/allcourt/${item.id}` }}
+                  className="court__link"
+                >
                   {item.title}
-                </a>
+                </Link>
               </div>
             );
           })}

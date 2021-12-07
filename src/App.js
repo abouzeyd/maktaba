@@ -12,6 +12,8 @@ import CoursAudio from './screens/CoursAudio';
 import PrecheAudio from './screens/PrechesAudio';
 import ConferencesAudio from './screens/ConferencesAudio';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import UpdateUser from './screens/updateUser/UpdateUser';
+import Allcourt from './screens/allcourt/Allcourt';
 
 function App() {
   return (
@@ -27,9 +29,11 @@ function App() {
           <Route path="/userslist" component={UsersList} />
           <Route path="/user/:userId" component={User} />
           <Route path="/createUser" component={NewUser} />
+          <Route path="/updateUser" component={UpdateUser} />
           <Route path="/coursAudio" component={CoursAudio} />
           <Route path="/prechesAudio" component={PrecheAudio} />
           <Route path="/conferencesAudio" component={ConferencesAudio} />
+          <Route path="/allcourt/:id" component={Allcourt} />
         </Switch>
       </Router>
     </div>

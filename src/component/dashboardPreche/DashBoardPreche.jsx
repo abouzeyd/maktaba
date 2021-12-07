@@ -2,8 +2,32 @@ import Topbar from '../topbar/Topbar';
 import Sidebar from '../sidebar/sidebar';
 import './DashBoardPreche.css';
 import { Form, Button } from 'react-bootstrap';
+import { useState } from 'react';
+import InputPreche from '../input/InputPreche';
 
 const DashBoardPreche = () => {
+  const [data, setData] = useState({
+    titleCourt: '',
+    dateCourt: '',
+    name: '',
+    fileCourt: '',
+  });
+  const handleChange = (e) => {
+    const newPreche = { ...data };
+    newPreche[e.target.id] = e.target.value;
+    setData(newPreche);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setData(data);
+    console.log(data);
+    setData({
+      titleCourt: '',
+      dateCourt: '',
+      name: '',
+      fileCourt: '',
+    });
+  };
   return (
     <div>
       <Topbar />
@@ -11,25 +35,14 @@ const DashBoardPreche = () => {
         <Sidebar />
         <div className="dashboardPreche__container">
           <div className="dashboardPreche__form">
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <div className="card " style={{ border: '0px solid black ' }}>
-                <input
-                  type="text"
-                  placeholder="titre du prêche"
-                  style={style.input}
+                <InputPreche
+                  handleChange={handleChange}
+                  style={style}
+                  data={data}
                 />
-                <input type="date" style={style.input} />
-                <input
-                  type="text"
-                  placeholder="Nom du precheur"
-                  style={style.input}
-                />
-                <input
-                  type="file"
-                  placeholder="Nom du precheur"
-                  style={style.input}
-                />
-                <Button className="btn btn-primary">
+                <Button className="btn btn-primary" type="submit">
                   <span className="newUser__signe">+</span>
                   Poster le prêche
                 </Button>
