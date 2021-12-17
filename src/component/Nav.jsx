@@ -8,7 +8,12 @@ const Nav = () => {
     <div style={{ backgroundColor: 'rgb(132, 184, 86)' }}>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="/">MAKTABA</Navbar.Brand>
+          <Link
+            to="/"
+            style={{ textDecoration: 'none', fontSize: 25, color: 'white' }}
+          >
+            MAKTABA
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Navigation className="me-auto">

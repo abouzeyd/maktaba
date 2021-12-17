@@ -91,9 +91,9 @@ const Dourous = ({ dourous, conference, preche }) => {
                   <h6 className="court__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <a href="/" className="court__link">
+                <Link to="/" className="court__link">
                   {item.title}
-                </a>
+                </Link>
               </div>
             );
           })}

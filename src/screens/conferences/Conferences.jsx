@@ -1,5 +1,6 @@
 import './Conferences.css';
 import audio from '../../assets/microphone-solid.svg';
+import { Link } from 'react-router-dom';
 
 const Conferences = ({ conference }) => {
   return (
@@ -29,9 +30,9 @@ const Conferences = ({ conference }) => {
                     <h6 className="conference__title">{item.name}</h6>
                     <span style={{ fontSize: 14 }}>{item.date}</span>
                   </div>
-                  <a href="/" className="conference__link">
+                  <Link to="/" className="conference__link">
                     {item.title}
-                  </a>
+                  </Link>
                 </div>
               );
             })}

@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import audios from '../audio/003.mp3';
+import audios from '../../audio/003.mp3';
 
-const AudioPlayer = () => {
+const AudioPlayer = ({ dourous }) => {
+  const audios = dourous[0].specifyCourt;
+  const { sound } = audios[1];
+  console.log(sound);
   const [trackIndex, setTrackIndex] = useState(0);
   const [trackProgress, setTrackProgress] = useState(0);
   const [playing, setPlaying] = useState(true);

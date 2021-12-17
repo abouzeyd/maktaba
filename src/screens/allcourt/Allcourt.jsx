@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const Allcourt = ({ dourous }) => {
   const { id } = useParams();
@@ -12,7 +12,7 @@ const Allcourt = ({ dourous }) => {
         {idData.specifyCourt.map((item) => {
           return (
             <li key={item.id}>
-              <a href={item.link}>{item.title}</a>
+              <Link to={item.link}>{item.title}</Link>
               {item.sound}
             </li>
           );
