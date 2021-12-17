@@ -1,16 +1,14 @@
 import React from 'react';
 import audio from '../../assets/microphone-solid.svg';
-import conference from '../../assets/headphones-solid.svg';
-import preche from '../../assets/think-peaks-brands.svg';
-import dourous from '../../data/dourous.json';
-import conferences from '../../data/conferences.json';
-import preches from '../../data/prêches.json';
+import conferences from '../../assets/headphones-solid.svg';
+import preches from '../../assets/think-peaks-brands.svg';
 import './Dourous.css';
 import { Link } from 'react-router-dom';
 
-const Dourous = () => {
-  const conférence = conferences.slice(0, 5);
-  const prêche = preches.slice(0, 5);
+const Dourous = ({ dourous, conference, preche }) => {
+  console.log(dourous);
+  const conférence = conference.slice(0, 5);
+  const prêche = preche.slice(0, 5);
   const cours = dourous.slice(0, 5);
 
   return (
@@ -18,7 +16,7 @@ const Dourous = () => {
       <div className="title__choise">
         <div className="name__court">
           <img
-            src={conference}
+            src={conferences}
             alt="conferences"
             width="20px"
             style={{ marginLeft: 35 }}
@@ -78,7 +76,7 @@ const Dourous = () => {
       {/* Prêches */}
       <div className="title__choise">
         <div className="speak__name">
-          <img src={preche} alt="h" width="20px" style={{ marginLeft: 35 }} />
+          <img src={preches} alt="h" width="20px" style={{ marginLeft: 35 }} />
           <span style={{ marginLeft: 18 }}> Prêches</span>
         </div>
         <div className="court__news">Nouveautés</div>

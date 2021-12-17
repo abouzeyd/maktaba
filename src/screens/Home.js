@@ -1,16 +1,13 @@
 import React from 'react';
-import Nav from '../component/Nav';
+
 import Header from '../component/Header';
 import Dourous from '../component/dourous/Dourous';
-import Footer from '../component/Footer';
 
-const Home = () => {
+const Home = ({ dourous, conference, preche }) => {
   return (
     <div>
-      <Nav />
       <Header />
-      <Dourous />
-      <Footer />
+      <Dourous dourous={dourous} conference={conference} preche={preche} />
     </div>
   );
 };

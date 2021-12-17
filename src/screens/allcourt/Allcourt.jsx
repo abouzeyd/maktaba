@@ -1,18 +1,23 @@
 import React from 'react';
-import cours from '../../data/dourous.json';
-import { Route as router } from 'react-router-dom';
-// import conference from '../../data/conferences.json';
+import { useParams } from 'react-router-dom';
 
-const Allcourt = () => {
-  const id = router.query;
-  console.log(id);
+const Allcourt = ({ dourous }) => {
+  const { id } = useParams();
 
-  // const idData = cours.find((x) => x.id !== id);
+  let idData = dourous.find((x) => x.id === id);
   return (
     <div>
-      {cours.map((item) => {
-        return <div>{item.title}</div>;
-      })}
+      {idData.title}
+      <div>
+        {idData.specifyCourt.map((item) => {
+          return (
+            <li key={item.id}>
+              <a href={item.link}>{item.title}</a>
+              {item.sound}
+            </li>
+          );
+        })}
+      </div>
     </div>
   );
 };

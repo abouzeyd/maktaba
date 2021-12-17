@@ -1,11 +1,8 @@
 import './Cours.css';
-import Footer from '../../component/Footer';
-import Nav from '../../component/Nav';
-import dourous from '../../data/dourous.json';
 import conference from '../../assets/headphones-solid.svg';
 import { Link } from 'react-router-dom';
 
-const Cours = () => {
+const Cours = ({ dourous }) => {
   const audio = new Audio();
   const audioPlay = audio.play();
   const audioPause = audio.pause();
@@ -13,7 +10,6 @@ const Cours = () => {
   console.log(audioPause);
   return (
     <div>
-      <Nav />
       <div className="container">
         <div className="title__choise">
           <div className="court__container">
@@ -36,7 +32,10 @@ const Cours = () => {
                     <h6 className="court__title">{item.name}</h6>
                     <span style={{ fontSize: 14 }}>{item.date}</span>
                   </div>
-                  <Link to="/" className="court__link">
+                  <Link
+                    to={{ pathname: `/allcourt/${item.id}` }}
+                    className="court__link"
+                  >
                     {item.title}
                   </Link>
                 </div>
@@ -45,7 +44,6 @@ const Cours = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

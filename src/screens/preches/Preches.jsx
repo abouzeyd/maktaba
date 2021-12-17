@@ -1,17 +1,13 @@
 import './Preche.css';
-import Nav from '../../component/Nav';
-import Footer from '../../component/Footer';
-import preches from '../../data/prêches.json';
-import preche from '../../assets/think-peaks-brands.svg';
+import preches from '../../assets/think-peaks-brands.svg';
 import { Link } from 'react-router-dom';
 
-const Preches = () => {
+const Preches = ({ preche }) => {
   return (
     <div>
-      <Nav />
       <div className="title__choise">
         <div className="speak__container">
-          <img src={preche} alt="h" width="20px" style={{ marginLeft: 35 }} />
+          <img src={preches} alt="h" width="20px" style={{ marginLeft: 35 }} />
           <span style={{ marginLeft: 18 }}> Prêches</span>
         </div>
         <div
@@ -29,7 +25,7 @@ const Preches = () => {
 
       <div className="court__choise" style={{ border: '3px solid #84b856' }}>
         <div>
-          {preches.map((item, index) => {
+          {preche.map((item, index) => {
             return (
               <div className="speak__item">
                 <div className="speak__div">
@@ -44,7 +40,6 @@ const Preches = () => {
           })}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

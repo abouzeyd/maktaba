@@ -1,12 +1,8 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useHistory } from 'react-router-dom';
 
 const Login = () => {
-  let history = useHistory();
-  const login = () => {
-    history.push('/dashboard');
-  };
+  const login = () => {};
   return (
     <div>
       <div style={style.main} className="container">

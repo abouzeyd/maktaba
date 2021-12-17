@@ -1,13 +1,9 @@
 import './Conferences.css';
-import conferences from '../../data/conferences.json';
 import audio from '../../assets/microphone-solid.svg';
-import Nav from '../../component/Nav';
-import Footer from '../../component/Footer';
 
-const Conferences = () => {
+const Conferences = ({ conference }) => {
   return (
     <div>
-      <Nav />
       <div style={{ marginTop: 35 }}>
         <div className="conference__choise">
           <div className="conference__container">
@@ -26,7 +22,7 @@ const Conferences = () => {
           style={{ border: '3px solid #65abc2' }}
         >
           <div>
-            {conferences.map((item) => {
+            {conference.map((item) => {
               return (
                 <div className="conference__item">
                   <div className="conference__div">
@@ -41,7 +37,6 @@ const Conferences = () => {
             })}
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   );
