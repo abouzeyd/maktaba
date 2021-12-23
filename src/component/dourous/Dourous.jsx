@@ -6,7 +6,6 @@ import './Dourous.css';
 import { Link } from 'react-router-dom';
 
 const Dourous = ({ dourous, conference, preche }) => {
-  console.log(dourous);
   const conférence = conference.slice(0, 5);
   const prêche = preche.slice(0, 5);
   const cours = dourous.slice(0, 5);
