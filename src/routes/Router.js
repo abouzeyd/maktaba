@@ -8,7 +8,7 @@ import Conferences from '../screens/conferences/Conferences';
 import Login from '../screens/Login';
 import Audio from '../screens/audioPlayer/AudioPlayer';
 
-const Rout = ({ dourous, conference, preche }) => {
+const Rout = ({ dourous, conference, preche, handlePlaying, playing }) => {
   return (
     <div>
       <Routes>
@@ -28,7 +28,7 @@ const Rout = ({ dourous, conference, preche }) => {
         <Route path="/login" element={<Login />} />
         {/* <Route path="/userslist" element={UsersList} /> */}
         <Route path="/allcourt/:id/" element={<Allcourt dourous={dourous} />} />
-        <Route path="/audio" element={<Audio dourous={dourous} />} />
+        <Route path="/audio" element={<Audio />} />
       </Routes>
     </div>
   );
