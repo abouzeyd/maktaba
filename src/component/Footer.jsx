@@ -15,11 +15,13 @@ const Footer = () => {
             <div
               style={{ display: 'flex', flexDirection: 'column', width: 12 }}
             >
-              {images.map((item) => {
+              {images.map((item, index) => {
                 return (
-                  <Link to={item.link} className="linkImage">
-                    <img src={item.img} alt="images" width="25px" />
-                  </Link>
+                  <div key={index}>
+                    <Link to={item.link} className="linkImage">
+                      <img src={item.img} alt="images" width="25px" />
+                    </Link>
+                  </div>
                 );
               })}
             </div>

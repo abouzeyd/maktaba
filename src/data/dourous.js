@@ -1,3 +1,6 @@
+import audio1 from '../audio/003.mp3';
+import audio2 from '../audio/LaVoieDroite.com_ L_épreuve des gens du fossé - Hadith du sorcier et du jeune homme..mp3';
+
 const data = {
   dourous: [
     {
@@ -8,12 +11,12 @@ const data = {
       date: '22/12/2021',
       link: "la-clarification-et-l'éclaircissement-de-l'arbre-de-la-foi-de-l'imam-As-si'di",
       specifyCourt: [
-        { id: 1, link: 'le-tawhid', title: 'le tawhid' },
+        { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audio1 },
         {
           id: 2,
           link: "la-seugnerie-d'Allah",
           title: "la seugnerie d'Allah",
-          sound: '/src/audio/003.mp3',
+          sound: audio2,
         },
       ],
     },
