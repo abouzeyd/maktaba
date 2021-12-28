@@ -6,9 +6,10 @@ import Cours from '../screens/cours/Cours';
 import Preches from '../screens/preches/Preches';
 import Conferences from '../screens/conferences/Conferences';
 import Login from '../screens/Login';
-import Audio from '../screens/audioPlayer/AudioPlayer';
+import AllConferences from '../screens/allconferences/AllConferences';
+import AllPreches from '../screens/allpreches/AllPreches';
 
-const Rout = ({ dourous, conference, preche, handlePlaying, playing }) => {
+const Rout = ({ dourous, conference, preche }) => {
   return (
     <div>
       <Routes>
@@ -27,8 +28,24 @@ const Rout = ({ dourous, conference, preche, handlePlaying, playing }) => {
         />
         <Route path="/login" element={<Login />} />
         {/* <Route path="/userslist" element={UsersList} /> */}
-        <Route path="/allcourt/:id/" element={<Allcourt dourous={dourous} />} />
-        <Route path="/audio" element={<Audio />} />
+        <Route
+          path="/allcourt/:id/"
+          element={
+            <Allcourt
+              dourous={dourous}
+              conference={conference}
+              preche={preche}
+            />
+          }
+        />
+        <Route
+          path="/allconferences/:id/"
+          element={<AllConferences conference={conference} />}
+        />
+        <Route
+          path="/allpreches/:id/"
+          element={<AllPreches preche={preche} />}
+        />
       </Routes>
     </div>
   );

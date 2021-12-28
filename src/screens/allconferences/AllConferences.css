@@ -1,0 +1,20 @@
+.sound__allconferences {
+  background-color: rgb(131, 208, 231);
+  display: flex;
+  margin-top: 12px;
+
+  padding: 12px;
+  align-items: center;
+  flex-direction: column;
+}
+.allconferences {
+  text-align: center;
+  border-radius: 12px;
+  /* border: 1px solid black; */
+  margin: 20px auto;
+  width: 200px;
+  padding: 5px;
+  background-color: rgb(131, 208, 231);
+  color: white;
+  font-weight: bold;
+}

@@ -1,45 +1,13 @@
 import audiotest from '../assets/audio/003.mp3';
 import audio2 from '../assets/audio/LaVoieDroite.com_ L_épreuve des gens du fossé - Hadith du sorcier et du jeune homme..mp3';
-const confData = {
-  conference: [
+const prechData = {
+  preche: [
     {
-      id: '1conf',
-      title: "La plénitude de l'adoration et de la servitude",
-      name: 'Abou houseyfa',
-      date: '10/09/2021',
-      info: 'information1',
-      specifyCourt: [
-        { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
-        {
-          id: 2,
-          link: "la-seugnerie-d'Allah",
-          title: "la seugnerie d'Allah",
-          sound: audio2,
-        },
-      ],
-    },
-    {
-      id: '2conf',
-      title: "Les mérites et bienfaits de l'islam",
-      name: 'Abou houseyfa',
-      date: '18/10/2021',
-      info: 'information2',
-      specifyCourt: [
-        { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
-        {
-          id: 2,
-          link: "la-seugnerie-d'Allah",
-          title: "la seugnerie d'Allah",
-          sound: audio2,
-        },
-      ],
-    },
-    {
-      id: '3conf',
+      id: '1pre',
       title:
-        "Résumé des règles sublimes sur les noms et attributs parfaits d'ALLAH de Cheikh Mohammad Ibn Salih Al ‘Outhaymine رحمه الله",
+        'L’épreuve des gens du fossé - Hadith du sorcier et du jeune homme',
       name: 'Abou houseyfa',
-      date: '11/11/2021',
+      date: '11/09/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -51,10 +19,10 @@ const confData = {
       ],
     },
     {
-      id: '4conf',
-      title: 'Le monde des djins',
+      id: '2pre',
+      title: 'Les mérites de la mosquée al Aqsa',
       name: 'Abou houseyfa',
-      date: '30/03/2021',
+      date: '04/10/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -66,10 +34,10 @@ const confData = {
       ],
     },
     {
-      id: '5conf',
-      title: "Le jeûne dans le mois de Cha'ban",
+      id: '3pre',
+      title: 'Les mérites du bon comportement et son importance',
       name: 'Abou houseyfa',
-      date: '20/03/2021',
+      date: '11/10/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -81,10 +49,10 @@ const confData = {
       ],
     },
     {
-      id: '6conf',
-      title: "La plénitude de l'adoration et de la servitude",
+      id: '4pre',
+      title: "Al adhan : l'appel à la prière",
       name: 'Abou houseyfa',
-      date: '10/09/2021',
+      date: '20/12/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -96,10 +64,10 @@ const confData = {
       ],
     },
     {
-      id: '7conf',
-      title: "Les mérites et bienfaits de l'islam",
+      id: '5pre',
+      title: "LLe mois de mouharam et le jeûne de 'achoura",
       name: 'Abou houseyfa',
-      date: '18/10/2021',
+      date: '10/01/2021',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -111,11 +79,11 @@ const confData = {
       ],
     },
     {
-      id: '8conf',
+      id: '6pre',
       title:
-        "Résumé des règles sublimes sur les noms et attributs parfaits d'ALLAH de Cheikh Mohammad Ibn Salih Al ‘Outhaymine رحمه الله",
+        'L’épreuve des gens du fossé - Hadith du sorcier et du jeune homme',
       name: 'Abou houseyfa',
-      date: '11/11/2021',
+      date: '11/09/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -127,10 +95,10 @@ const confData = {
       ],
     },
     {
-      id: '9conf',
-      title: 'Le monde des djins',
+      id: '7pre',
+      title: 'Les mérites de la mosquée al Aqsa',
       name: 'Abou houseyfa',
-      date: '30/03/2021',
+      date: '04/10/2020',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -142,10 +110,40 @@ const confData = {
       ],
     },
     {
-      id: '10conf',
-      title: "Le jeûne dans le mois de Cha'ban",
+      id: '8pre',
+      title: 'Les mérites du bon comportement et son importance',
       name: 'Abou houseyfa',
-      date: '20/03/2021',
+      date: '11/10/2020',
+      specifyCourt: [
+        { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
+        {
+          id: 2,
+          link: "la-seugnerie-d'Allah",
+          title: "la seugnerie d'Allah",
+          sound: audio2,
+        },
+      ],
+    },
+    {
+      id: '9pre',
+      title: "Al adhan : l'appel à la prière",
+      name: 'Abou houseyfa',
+      date: '20/12/2020',
+      specifyCourt: [
+        { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
+        {
+          id: 2,
+          link: "la-seugnerie-d'Allah",
+          title: "la seugnerie d'Allah",
+          sound: audio2,
+        },
+      ],
+    },
+    {
+      id: '10pre',
+      title: "LLe mois de mouharam et le jeûne de 'achoura",
+      name: 'Abou houseyfa',
+      date: '10/01/2021',
       specifyCourt: [
         { id: 1, link: 'le-tawhid', title: 'le tawhid', sound: audiotest },
         {
@@ -158,4 +156,4 @@ const confData = {
     },
   ],
 };
-export default confData;
+export default prechData;

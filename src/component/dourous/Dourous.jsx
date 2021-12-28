@@ -26,7 +26,7 @@ const Dourous = ({ dourous, conference, preche }) => {
       </div>
       <div className="court__choise">
         <div>
-          {cours.map((item, index) => {
+          {cours.map((item) => {
             return (
               <div className="court__item">
                 <div className="court__div">
@@ -62,7 +62,7 @@ const Dourous = ({ dourous, conference, preche }) => {
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
                 <Link
-                  to={{ pathname: `/allcourt/${item.id}` }}
+                  to={{ pathname: `/allconferences/${item.id}` }}
                   className="court__link"
                 >
                   {item.title}
@@ -83,14 +83,17 @@ const Dourous = ({ dourous, conference, preche }) => {
 
       <div className="court__choise" style={{ border: '3px solid #84b856' }}>
         <div>
-          {prêche.map((item, index) => {
+          {prêche.map((item) => {
             return (
               <div className="court__item">
                 <div className="court__div">
                   <h6 className="court__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <Link to="/" className="court__link">
+                <Link
+                  to={{ pathname: `/allpreches/${item.id}` }}
+                  className="court__link"
+                >
                   {item.title}
                 </Link>
               </div>

@@ -25,14 +25,17 @@ const Preches = ({ preche }) => {
 
       <div className="court__choise" style={{ border: '3px solid #84b856' }}>
         <div>
-          {preche.map((item, index) => {
+          {preche.map((item) => {
             return (
               <div className="speak__item">
                 <div className="speak__div">
                   <h6 className="speak__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <Link to="/" className="speak__link">
+                <Link
+                  to={{ pathname: `/allpreches/${item.id}` }}
+                  className="speak__link"
+                >
                   {item.title}
                 </Link>
               </div>

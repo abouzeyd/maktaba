@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './routes/Router';
 import data from './data/dourous';
 import confData from './data/conferences';
-import prechData from './data/prêches';
+import prechData from './data/preche';
 import Navigation from './component/Nav';
 import Footer from './component/Footer';
 
