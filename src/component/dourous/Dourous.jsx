@@ -26,7 +26,7 @@ const Dourous = ({ dourous, conference, preche }) => {
       </div>
       <div className="court__choise">
         <div>
-          {cours.map((item, index) => {
+          {cours.map((item) => {
             return (
               <div className="court__item">
                 <div className="court__div">
@@ -83,7 +83,7 @@ const Dourous = ({ dourous, conference, preche }) => {
 
       <div className="court__choise" style={{ border: '3px solid #84b856' }}>
         <div>
-          {prêche.map((item, index) => {
+          {prêche.map((item) => {
             return (
               <div className="court__item">
                 <div className="court__div">
