@@ -16,6 +16,7 @@ const Allcourt = ({ dourous, conference, preche }) => {
         {idData.specifyCourt.map((item) => {
           return (
             <div key={item.id} className="sound">
+              <div className="count">{item.id}</div>
               <div className="sound__title">{item.title}</div>
               <audio
                 src={item.sound}
