@@ -62,7 +62,7 @@ const Dourous = ({ dourous, conference, preche }) => {
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
                 <Link
-                  to={{ pathname: `/allcourt/${item.id}` }}
+                  to={{ pathname: `/allconferences/${item.id}` }}
                   className="court__link"
                 >
                   {item.title}
@@ -90,7 +90,10 @@ const Dourous = ({ dourous, conference, preche }) => {
                   <h6 className="court__title">{item.name}</h6>
                   <span style={{ fontSize: 14 }}>{item.date}</span>
                 </div>
-                <Link to="/" className="court__link">
+                <Link
+                  to={{ pathname: `/allpreches/${item.id}` }}
+                  className="court__link"
+                >
                   {item.title}
                 </Link>
               </div>

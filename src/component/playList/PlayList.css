@@ -1,10 +1,9 @@
-.audio__player {
+/* .audio__player {
   --primary: rgb(10, 202, 97);
   --secondary: white;
   display: flex;
   align-items: center;
-  /* width: 700px; */
-  /* background-color: black; */
+
   width: 600px;
   margin: 20px auto;
   padding: 12px;
@@ -25,11 +24,8 @@
   color: var(--primary);
 }
 .play__pause {
-  /* background-color: var(--primary); */
   border: none;
-  /* border-radius: 50%;
-  width: 35px;
-  height: 35px; */
+
   font-size: 17px;
   color: var(--secondary);
   display: flex;
@@ -63,8 +59,6 @@
   outline: none;
 }
 
-/* progress bar  safari*/
-
 .progress__bar::webkit-slider-runnable-track {
   background: var(--bar-bg);
   border-radius: 0;
@@ -73,8 +67,6 @@
   height: 11px;
   outline: none;
 }
-
-/* progress bar firefox */
 
 .progress__bar::moz-range-track {
   background: var(--bar-bg);
@@ -87,7 +79,6 @@
 .progress__bar::-moz-focus-outer {
   border: 0px;
 }
-/* progress__bar chrome and safari */
 
 .progress__bar::before {
   content: '';
@@ -102,7 +93,6 @@
   z-index: 2;
   cursor: pointer;
 }
-/* progress__bar firefox */
 
 .progress__bar::-moz-ranger-progress {
   background-color: var(--seek-before-color);
@@ -110,8 +100,6 @@
   border-bottom-left-radius: 10px;
   height: 11px;
 }
-
-/* knobby chrome and safari */
 
 .progress__bar::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -147,4 +135,4 @@
 .progress__bar:active::-moz-range-thumb {
   transform: scale(1.2);
   background: var(--selecte);
-}
+} */

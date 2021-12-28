@@ -30,7 +30,10 @@ const Conferences = ({ conference }) => {
                     <h6 className="conference__title">{item.name}</h6>
                     <span style={{ fontSize: 14 }}>{item.date}</span>
                   </div>
-                  <Link to="/" className="conference__link">
+                  <Link
+                    to={{ pathname: `/allconferences/${item.id}` }}
+                    className="conference__link"
+                  >
                     {item.title}
                   </Link>
                 </div>

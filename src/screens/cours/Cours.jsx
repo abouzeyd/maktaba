@@ -3,11 +3,6 @@ import conference from '../../assets/headphones-solid.svg';
 import { Link } from 'react-router-dom';
 
 const Cours = ({ dourous }) => {
-  const audio = new Audio();
-  const audioPlay = audio.play();
-  const audioPause = audio.pause();
-  console.log(audioPlay);
-  console.log(audioPause);
   return (
     <div>
       <div className="container">
@@ -25,7 +20,7 @@ const Cours = ({ dourous }) => {
         </div>
         <div className="court__choise">
           <div>
-            {dourous.map((item, index) => {
+            {dourous.map((item) => {
               return (
                 <div className="court__item">
                   <div className="court__div">
