@@ -1,0 +1,22 @@
+.containt {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  max-width: 275px;
+}
+@media screen and (max-width: 800px) {
+  .containt {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    max-width: 275px;
+    margin: 12px auto;
+  }
+}
+
+.link__dashboard {
+  color: white;
+  text-decoration: none;
+}
